@@ -34,6 +34,7 @@ const halfLength = Math.floor(faq.length / 2);
                     </div>
                 ))}
               </div>
+
               <div className="relative flex-1 lg:pt-24">
                 {faq.slice(halfLength).map((item, index) => (
                     <div>
@@ -42,6 +43,9 @@ const halfLength = Math.floor(faq.length / 2);
                 ))}
               </div>
             </div>
+            
+            <div className="absolute left-1/2 top-0 -z-10 h-full w-[2px] -translate-x-1/2 bg-s2 max-lg:hidden" />
+
           </div>
         </div>
       </Element>
