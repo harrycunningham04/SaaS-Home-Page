@@ -34,6 +34,13 @@ const halfLength = Math.floor(faq.length / 2);
                     </div>
                 ))}
               </div>
+              <div className="relative flex-1 lg:pt-24">
+                {faq.slice(halfLength).map((item, index) => (
+                    <div>
+                        <FaqItem id={item.id} item={item} index={halfLength + index} />
+                    </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
